@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Olma Ekranı</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="girisEkrani" class="containerContent">
+
+      <!-- Kayıt Formu -->
+        <div for="registerForm" class="flex flex-col items-center text-2xl font-bold mb-4
+        ">
+          Kayıt Ekranı
+        </div>
+        <div class="w-full flex flex-col items-start justify-center">
+          <label for="registerForm">Kullanıcı Adı:</label>
+          <input
+            type="text"
+            id="registerUsername"
+            name="registerUsername"
+            placeholder="Kullanıcı Adı..."
+            class="w-full h-12 mb-3 bg-zinc-200 text-zinc-700 placeholder:text-zinc-500 px-4 focus:outline-none"
+            required
+          />
+        </div>
+
+        <div class="w-full flex flex-col items-start justify-center">
+          <label for="registerForm">Şifre:</label>
+          <input
+            type="password"
+            id="registerPassword"
+            name="registerPassword"
+            placeholder="Şifre gir..."
+            class="w-full h-12 mb-3 bg-zinc-200 text-zinc-700 placeholder:text-zinc-500 px-4 focus:outline-none"
+            required
+          />
+        </div>        
+        <button id="registerBtn" type="button" class="w-full h-10 rounded-md bg-purple-500 text-white text-center mb-3">Kayıt Ol</button>
+        <a href="index.html" id="loginBtn" type="submit" class="text-zinc-500 text-base">Bir hesabın var mı? <span class="text-black">Giriş Yap!</span></button>
+      </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="giris.js"></script>
+  </body>
+</html>
